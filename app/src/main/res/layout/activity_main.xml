@@ -31,7 +31,8 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="Select"
-                android:layout_margin="5dp"
+                android:textSize="12dp"
+                android:layout_margin="2dp"
                 android:id="@+id/select"
                 />
             <Button
@@ -39,20 +40,43 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="Capture"
-                android:layout_margin="5dp"
+                android:layout_margin="2dp"
+                android:textSize="12dp"
                 android:id="@+id/capture"
                 ></Button>
             <Button
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="2dp"
                 android:id="@+id/predict"
+                android:textSize="12dp"
                 android:text="Predict"/>
 
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Gender"
+                android:textColor="@color/black">
 
+            </TextView>
+            <RadioButton android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:checked="true"></RadioButton>
+            <RadioButton android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"></RadioButton>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/tv"
